@@ -1,0 +1,17 @@
+# Local build and analysis outputs
+*.iml
+.gradle/
+.idea/
+build/
+node_modules/
+.expo/
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Raw bug reports and temporary reverse-engineering workspaces
+bugreport-*.zip
+raw_apk/
