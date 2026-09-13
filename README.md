@@ -1,8 +1,7 @@
-# Asha Mitra — SIH Project Repository
+# Asha Mitra — 
+Asha Mitra is a multilingual health-triage prototype intended to help an ASHA worker or community health user describe a patient problem and receive a safety-oriented next step. This repository contains the APK release.
 
-Asha Mitra is a multilingual health-triage prototype intended to help an ASHA worker or community health user describe a patient problem and receive a safety-oriented next step. This repository contains the APK release and the **reconstructed client-side artifacts recovered from the supplied APK**.
 
-> Important: this repository does not contain the original backend source. The APK calls a remote backend procedure, but compiled mobile binaries do not include the server implementation, Groq secret, database, or deployment configuration.
 
 ## Repository layout
 
@@ -22,6 +21,3 @@ The mobile client is an Expo/React Native application using Hermes bytecode. It 
 
 The recovered files are forensic outputs rather than an original editable Expo project. To continue development, create a new Expo/React Native project, migrate the relevant logic from `frontend/javascript/decompiled.js`, and recreate the backend using the contract in `backend/API_CONTRACT.md`. Do not place Groq or other provider secrets in the mobile bundle. The QR/camera feature should be implemented with a supported camera package in the new project rather than relying on the experimental APK-level patch.
 
-## SIH submission checklist
-
-For an SIH-ready submission, add the original source repository, a proper backend service, environment-variable documentation, a database/privacy decision, API authentication, a working camera/ABHA QR flow, test cases, deployment instructions, screenshots, and a short demo video. The current APK is suitable as a prototype artifact, not as proof that the reconstructed source is production-ready.
